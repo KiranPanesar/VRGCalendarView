@@ -1,4 +1,5 @@
 Pod::Spec.new do |spec|
+  spec.platform = :ios
   spec.name         = 'MXLCalendarView'
   spec.version      = '0.1.1'
   spec.license      = { :type => 'MIT' }
