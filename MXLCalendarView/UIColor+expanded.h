@@ -6,8 +6,6 @@
  [UIColor colorWithHexString:@"0xff00ff"]
  *******/
 
-#import <UIKit/UIKit.h>
-
 #define SUPPORTS_UNDOCUMENTED_API	0
 
 @interface UIColor (UIColor_Expanded)

@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Vurig Media. All rights reserved.
 //
 
-
-#import <UIKit/UIKit.h>
 #import "UIColor+expanded.h"
 
 #define kVRGCalendarViewTopBarHeight 60
