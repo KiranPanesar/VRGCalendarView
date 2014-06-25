@@ -5,6 +5,8 @@
 //  Copyright (c) 2011 Vurig Media. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 @interface UIView (convenience)
 
 @property (nonatomic) CGPoint frameOrigin;

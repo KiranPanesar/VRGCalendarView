@@ -5,6 +5,8 @@
 //  Copyright (c) 2012 Vurig Media. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 @interface NSMutableArray (Convenience)
 
 - (void)moveObjectFromIndex:(NSUInteger)from toIndex:(NSUInteger)to;

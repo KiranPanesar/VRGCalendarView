@@ -5,6 +5,8 @@
 //  Copyright (c) 2012 Vurig Media. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 @interface NSDate (Convenience)
 
 -(NSDate *)offsetMonth:(int)numMonths;
