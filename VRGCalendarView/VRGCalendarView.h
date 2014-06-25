@@ -18,7 +18,7 @@
 
 @protocol VRGCalendarViewDelegate;
 @interface VRGCalendarView : UIView {
-    __weak id <VRGCalendarViewDelegate> delegate;
+    id <VRGCalendarViewDelegate> delegate;
     
     NSDate *currentMonth;
     
@@ -35,7 +35,7 @@
     NSArray *markedColors;
 }
 
-@property (nonatomic, weak) id <VRGCalendarViewDelegate> delegate;
+@property (nonatomic, retain) id <VRGCalendarViewDelegate> delegate;
 @property (nonatomic, retain) NSDate *currentMonth;
 @property (nonatomic, retain) UILabel *labelCurrentMonth;
 @property (nonatomic, retain) UIImageView *animationView_A;
@@ -61,6 +61,6 @@
 @end
 
 @protocol VRGCalendarViewDelegate <NSObject>
--(void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month targetHeight:(float)targetHeight animated:(BOOL)animated;
+-(void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month year:(int)year numOfDays:(int)days targetHeight:(float)targetHeight animated:(BOOL)animated;
 -(void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date;
 @end
